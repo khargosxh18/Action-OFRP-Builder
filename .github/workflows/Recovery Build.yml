@@ -4,13 +4,10 @@ on:
   workflow_dispatch:
     inputs:
       device_tree_url:
-        description: "Select Device Tree repository"
+        description: "Device Tree repository URL (any git URL)"
         required: true
-        type: choice
         default: https://github.com/AzzyC/ofox_device_xiaomi_peridot
-        options:
-          - https://github.com/AzzyC/ofox_device_xiaomi_peridot
-          - https://gitlab.com/OrangeFox/device/peridot_new
+        type: string
 
       device_tree_branch:
         description: "Device Tree branch (type any branch name, e.g. ARMv9)"
