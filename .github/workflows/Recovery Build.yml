@@ -24,7 +24,7 @@ jobs:
 
     env:
       SYNC_URL: https://gitlab.com/OrangeFox/sync.git
-      MANIFEST_BRANCH: 16.0
+      MANIFEST_BRANCH: "16.0"
       DEVICE_TREE_URL: ${{ inputs.device_tree_url }}
       DEVICE_TREE_BRANCH: ${{ inputs.device_tree_branch }}
       RECOVERY_URL: https://github.com/khargosxh18/android_bootable_recovery_fox
